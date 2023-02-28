@@ -41,33 +41,6 @@
 			"response": []
 		},
 		{
-			"name": "GET [/models?greater=&lower=]",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/v1/cars?mode=rounds",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"v1",
-						"cars"
-					],
-					"query": [
-						{
-							"key": "mode",
-							"value": "rounds"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "GET  [/brands]",
 			"request": {
 				"method": "GET",
