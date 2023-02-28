@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "14f21def-a29d-4e50-bc1f-1f97ace2b074",
+		"name": "nexu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10582079"
+	},
+	"item": [
+		{
+			"name": "GET [/brands/:id/models]",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/brands/1/models",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"brands",
+						"1",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET [/models?greater=&lower=]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/cars?mode=rounds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "mode",
+							"value": "rounds"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  [/brands]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST [/brands]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"demo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST [/brands/:id/models]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"falso\", \"average_price\": 406400}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/brands/5/models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"brands",
+						"5",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT [/models/:id]",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"average_price\": 407400}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/models/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"models",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET [/models?greater=&lower=]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/models?greater=1449900&lower=4498875",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"models"
+					],
+					"query": [
+						{
+							"key": "greater",
+							"value": "1449900"
+						},
+						{
+							"key": "lower",
+							"value": "4498875"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
